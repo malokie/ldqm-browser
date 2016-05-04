@@ -201,7 +201,7 @@ hist_list_long = ['CRC',
                   'Strips_fired_for_VFAT_chip_Slot5']
 
 def dqm_help(request):
-  return render(request,'test.html', {'hist_list_long':hist_list_long,})
+  return render(request,"histogram/html/index.html", {'hist_list_long':hist_list_long,})
 
 def runs(request):
   run_list = Run.objects.all()
